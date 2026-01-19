@@ -49,3 +49,8 @@ app.post('/api/voice', upload.single('audio'), async (req, res) => {
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Add this so you can see if the server is alive in your browser
+app.get('/', (req, res) => {
+    res.send('Apron Assistant Server is Running!');
+});
