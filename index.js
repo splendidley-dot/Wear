@@ -1,7 +1,4 @@
 
-// Add this at the top with your other routes
-app.get('/', (req, res) => {
-    res.send('Apron Assistant Brain is Online and Ready!');
 });
 const express = require('express');
 const Groq = require('groq-sdk');
@@ -58,4 +55,8 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 // Add this so you can see if the server is alive in your browser
 app.get('/', (req, res) => {
     res.send('Apron Assistant Server is Running!');
+});
+// Add this at the top with your other routes
+app.get('/', (req, res) => {
+    res.send('Apron Assistant Brain is Online and Ready!');
 });
