@@ -1,3 +1,8 @@
+
+// Add this at the top with your other routes
+app.get('/', (req, res) => {
+    res.send('Apron Assistant Brain is Online and Ready!');
+});
 const express = require('express');
 const Groq = require('groq-sdk');
 const gTTS = require('gtts');
