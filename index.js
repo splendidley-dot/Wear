@@ -1,5 +1,4 @@
 
-});
 const express = require('express');
 const Groq = require('groq-sdk');
 const gTTS = require('gtts');
